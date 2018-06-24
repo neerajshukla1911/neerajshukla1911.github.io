@@ -1,0 +1,141 @@
+.h2span{
+    display: inline;
+}
+
+body{
+   width: auto !important;  /* Firefox will set width as auto */
+}
+
+.lead{
+    font-size:16px !important;
+    text-align: justify;
+}
+.lead2{
+    font-size:16px !important;
+    text-align: justify;
+}
+
+.btn-head{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+
+.lead {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px !important;
+    font-family: sans-serif !important;
+    font-weight: unset !important;
+    line-height: 1.4;
+}
+
+.lead2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+}
+
+
+.bs-footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+.footer-links {
+  margin: 10px 0;
+  padding-left: 0;
+}
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+}
+.footer-links li:first-child {
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .bs-footer {
+  }
+  .bs-footer p {
+    margin-bottom: 0;
+  }
+}
+
+.jumbotron{
+  background: none!important;
+}
+.jumbotron {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px!important;
+    padding-left: 30px;
+    margin-bottom: 5px!important;
+    color: inherit;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+      padding-top: 33px;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+}
+.ilogo{
+        height: 60px;
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 10px;
+    }
+    h4, .h4 {
+        font-size: 16px;
+    }
+    h1, .h1 {
+        font-size: 60px !important;
+    }
+    h2, .h2 {
+        font-size: 37px !important;
+    }
+    .ilogo{
+        height: 50px;
+    }
+}
+
+.head2
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
