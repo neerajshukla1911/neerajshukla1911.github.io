@@ -929,12 +929,7 @@ figure {
 img {
   vertical-align: middle;
 }
-.img-responsive {
-  display: block;
-  width: 100% \9;
-  max-width: 100%;
-  height: auto;
-}
+.img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
