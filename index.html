@@ -1,168 +1,1172 @@
-
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="static/img/neeraj.png">
-    <title>Neeraj Shukla</title>
-    <link href="static/css/bootstrap.css" rel="stylesheet">
-    <link href="static/css/home.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neeraj Shukla | Staff Software Engineer &amp; Distributed Systems / GenAI Architect</title>
+  
+  <meta name="description" content="Staff-level backend engineer with 13+ years of experience designing high-throughput distributed systems, event-driven data pipelines (1B+ daily events), and scalable AI/ML infrastructure at Oracle (OCI), BrowserStack, and Fynd (acquired by Reliance).">
+  <meta name="author" content="Neeraj Dilip Shukla">
+  <meta name="keywords" content="Neeraj Shukla, Staff Software Engineer, Distributed Systems, GenAI, RAG, Kafka, Python, FastAPI, Temporal, pgvector, Kubernetes, OCI, Cloud Architecture">
 
-    <script src="static/js/bootstrap.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121331245-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Neeraj Shukla | Staff Software Engineer &amp; Distributed Systems / GenAI Architect">
+  <meta property="og:description" content="Staff Backend Engineer with 13+ years designing high-throughput distributed systems, 1B+ event/day Kafka pipelines, and production GenAI architectures at Oracle Cloud (OCI).">
+  <meta property="og:url" content="https://neerajshukla1911.github.io/">
+  <meta property="og:image" content="https://neerajshukla1911.github.io/static/img/photo_HD.jpg">
 
-      gtag('config', 'UA-121331245-1');
-    </script>
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Neeraj Shukla | Staff Software Engineer">
+  <meta name="twitter:description" content="Staff Software Engineer at Oracle (OCI) specializing in High-Throughput Distributed Systems and GenAI Infrastructure.">
+  <meta name="twitter:image" content="https://neerajshukla1911.github.io/static/img/photo_HD.jpg">
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="static/img/photo_HD.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="static/img/photo_HD.jpg">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/css/style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Neeraj Dilip Shukla",
+    "url": "https://neerajshukla1911.github.io/",
+    "image": "https://neerajshukla1911.github.io/static/img/photo_HD.jpg",
+    "jobTitle": "Staff Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Oracle Cloud Infrastructure"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Amravati University"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangalore",
+      "addressCountry": "India"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/neerajshukla1911/",
+      "https://github.com/neerajshukla1911",
+      "https://medium.com/@neerajshukla1911",
+      "https://www.youtube.com/@neerajdshukla"
+    ]
+  }
+  </script>
 </head>
 <body>
-<div class="jumbotron">
+
+  <!-- Ambient glowing decorative backgrounds -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="ambient-mesh" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-3 col-md-3 col-sm-offset-1 col-md-offset-2 hidden-xs col-lg-2 col-lg-offset-3">
-                <img src="static/img/neeraj.png" class="img-responsive"/>
-            </div>
-            <div class="col-sm-8 col-md-5 col-lg-4">
-                <img src="static/img/neeraj.png" class="img-responsive visible-xs"
-                     style="margin-left: auto;margin-right: auto;text-align: center;width:120px"/>
-                <h1 class="hidden-xs" style="margin-top:18px;font-size: 55px !important;">Neeraj Shukla</h1>
-                <h1 class="visible-xs text-center" style="margin-top:10px">Neeraj Shukla</h1>
-                <p class="hidden-xs lead" style="margin-top:10px;font-size: 16px !important;">neerajshukla1911@gmail.com</p>
-                <h5 class="visible-xs" style="text-align:center">neerajshukla1911@gmail.com</h5>
-                <h5 class="visible-xs" style="text-align:center">Principal Engineer @ Fynd</h5>
-            </div>
+      <a href="#home" class="brand" aria-label="Neeraj Shukla Home">
+        <div class="brand-monogram">NS</div>
+        <div class="brand-text">
+          <span class="brand-name">Neeraj Shukla</span>
+          <span class="brand-title">Staff Engineer @ OCI</span>
         </div>
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1  col-md-offset-2 col-md-8 col-lg-8 col-lg-offset-2">
-                <p class="hidden-xs" style="text-align:center;margin-top:15px">
-                    <!--<a class="btn btn-primary btn-head" href="http://scholar.google.com/citations?user=udmAQC4AAAAJ"-->
-                       <!--target="_blank" rel="noopener noreferrer">Publications</a>-->
-                    <!--<a class="btn btn-primary btn-head" data-toggle="modal" data-target="#myModal">Medical Abstracts</a>-->
-                    <a class="btn btn-primary btn-head" href="http://github.com/neerajshukla1911" target="_blank"
-                       rel="noopener noreferrer"><i class="fa fa-github"></i> Github</a>
-                    <a class="btn btn-primary btn-head" href="https://www.linkedin.com/in/neeraj-shukla-a0b206100" target="_blank"
-                       rel="noopener noreferrer"><i class="fa fa-linkedin"></i> Linkedin</a>
-                    <a class="btn btn-primary btn-head" href="https://medium.com/@neerajshukla1911" target="_blank"
-                       rel="noopener noreferrer"><i class="fa fa-medium"></i> Medium</a>
-                </p>
-                <div class="visible-xs" style="text-align: center;">
-                    <!--<div><a class="btn btn-primary btn-head btn-small" data-toggle="modal" data-target="#myModal"-->
-                            <!--style="width:222px;">Medical publications &amp; abstracts</a></div>-->
-                    <!--<div><a class="btn btn-primary btn-head btn-small"-->
-                            <!--href="http://scholar.google.com/citations?user=udmAQC4AAAAJ" target="_blank"-->
-                            <!--rel="noopener noreferrer" style="">Publications on Google Scholar</a></div>-->
-                    <!--<div style="margin-top: 5px">-->
-                        <!--<a class="btn btn-primary btn-small" href="http://github.com/neerajshukla1911" target="_blank"-->
-                           <!--rel="noopener noreferrer"><i class="fa fa-github"></i> Github</a>-->
-                        <!--<a class="btn btn-primary btn-small" href="https://www.linkedin.com/in/neeraj-shukla-a0b206100"-->
-                           <!--target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i> Linkedin Profile</a>-->
-                    <!--</div>-->
-                    <!--<div><a class="btn btn-primary btn-head btn-small" href="https://medium.com/@neerajshukla1911"-->
-                            <!--target="_blank" rel="noopener noreferrer" style=""><i class="fa fa-medium"></i> Read my-->
-                        <!--articles on Medium</a></div>-->
-                </div>
-            </div>
-        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">About</a></li>
+          <li><a href="#domains" class="nav-link">Pillars</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#shorts" class="nav-link">Shorts</a></li>
+          <li><a href="#writings" class="nav-link">Writings</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action items: Theme Toggle, Resume & Mobile Menu -->
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm open-resume-modal" type="button" aria-label="View Resume Modal">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Resume</span>
+        </button>
+
+        <button class="btn-icon" id="theme-toggle" type="button" aria-label="Toggle theme">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
     </div>
-</div>
-<div class="container marketing">
-    <div class="row">
-        <div class="col-md-12">
-            <p class="hidden-xs lead" style="text-align:center">Open source Architect, Software Engineer, Deep Learning Practitioner</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12" style="text-align:center">
-            <h3 class="hidden-xs">About Me</h3>
-            <h4 class="visible-xs">About Me</h4>
-        </div>
-        <div class="col-md-12">
-            <p class="lead" style="text-align:justify">
-                Currenty working as a Principal Software Engineer at Fynd. I was associate consultant at Capgemini previously.
-                I am expert in building scalable technology based products, working on performance enhancements and optimizations of 
-                web applications, working architectural designs of web products, applying leading edge technologies on products for use cases.
-            </p>
-        </div>
-        <!-- <div class="col-md-6" style="margin-top:20px;">
-            <h3 style="margin-top:0px" class="hidden-xs">Research</h3>
-            <h3 style="margin-top: 0px;font-size:26px;text-align:center" class="visible-xs">Research at Fynd</h3>
-            <p class="lead">Contribution in research at Fynd</p>
-            <div class="" style="text-align:right">
-                <a class="btn btn-primary visible-xs-inline-block" href="http://research.fynd.com/"
-                   target="_blank" rel="noopener noreferrer" style="margin: 3px 3px 3px 3px;"><i
-                        class="fa fa-external-link" style="margin-right:5px"></i>Research at Fynd</a>
-                <a class="btn btn-primary hidden-xs" href="http://research.fynd.com/" target="_blank"
-                   rel="noopener noreferrer" style="margin: 3px 3px 3px 3px;"><i class="fa fa-external-link"
-                                                                                 style="margin-right:5px"></i>Research at Fynd</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Staff Engineer @ Oracle Cloud Infrastructure</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting <span class="text-gradient">Distributed Systems</span> &amp; GenAI Platforms at Hyperscale
+          </h1>
+
+          <p class="hero-lead">
+            Staff-level backend engineer with <strong>13+ years</strong> of experience designing high-throughput distributed systems, event-driven streaming pipelines (<strong>1B+ daily events</strong>), and scalable <strong>AI/ML infrastructure</strong>. Proven track record in building enterprise RAG architectures, embedding search engines, and productionizing GenAI workflows across cloud platforms and high-growth startups.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary open-resume-modal" type="button">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span>View Full Resume</span>
+            </button>
+
+            <a href="static/neeraj_shukla_resume.pdf" download="Neeraj_Shukla_Resume.pdf" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download PDF</span>
+            </a>
+
+            <div class="social-links">
+              <a href="https://github.com/neerajshukla1911" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="GitHub Profile" title="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/neerajshukla1911/" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+
+              <a href="https://www.youtube.com/@neerajdshukla/shorts" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="YouTube Shorts: @neerajdshukla" title="YouTube Shorts: @neerajdshukla">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+
+              <a href="https://medium.com/@neerajshukla1911" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="Medium Articles" title="Medium Articles">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+              </a>
+
+              <button class="btn-icon copy-email-btn" type="button" aria-label="Copy Email" title="Copy Email: neerajshukla1911@gmail.com">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </button>
             </div>
-        </div>
-        <div class="col-md-6" style="margin-top:20px;">
-            <h3 style="margin-top: 0px" class="hidden-xs">Work</h3>
-            <h3 style="margin-top: 0px;font-size:26px;text-align:center" class="visible-xs">Presentation of Work</h3>
-            <p class="lead">Presentation of work</p>
-            <div class=" " style="text-align:right">
-                <a class="btn btn-primary visible-xs-inline-block" href="https://docs.google.com/presentation/d/1X7x6fofiQ4TLecBEYLgrXRD5O19-VfLOaP68Pwwv8n8"
-                   target="_blank" rel="noopener noreferrer" style="margin: 3px 3px 3px 3px;"><i
-                        class="fa fa-external-link" style="margin-right:5px"></i> Presentation</a>
-                <a class="btn btn-primary hidden-xs" href="https://docs.google.com/presentation/d/1X7x6fofiQ4TLecBEYLgrXRD5O19-VfLOaP68Pwwv8n8" target="_blank"
-                   rel="noopener noreferrer" style="margin: 3px 3px 3px 3px;"><i class="fa fa-external-link"
-                                                                                 style="margin-right:5px"></i>
-                                                                                 Presentation</a>
-            </div>
-        </div> -->
-        <div class="col-md-6" style="margin-top:20px;">
-            <h3 style="margin-top:0px" class="hidden-xs">Flask Full</h3>
-            <h3 style="margin-top: 0px;font-size:26px;text-align:center" class="visible-xs">Flask Full</h3>
-            <p class="lead">How can we develop large application using flask?</p>
-            <div class="" style="text-align:right">
-                <a class="btn btn-primary visible-xs-inline-block" href="https://github.com/gofynd/flask-full/"
-                   target="_blank" rel="noopener noreferrer" style="margin: 3px 3px 3px 3px;"><i
-                        class="fa fa-external-link" style="margin-right:5px"></i> Flask Full Github Repository</a>
-                <a class="btn btn-primary hidden-xs" href="https://github.com/gofynd/flask-full/" target="_blank"
-                   rel="noopener noreferrer" style="margin: 3px 3px 3px 3px;"><i class="fa fa-external-link"
-                                                                                 style="margin-right:5px"></i> Flask Full Github Repository</a>
-            </div>
-            <!--<a href="https://github.com/gofynd/flask-full/" target="_blank" rel="noopener noreferrer"><img-->
-                    <!--src="static/img/dva2.png" class="img-responsive"-->
-                    <!--style="margin-top:15px;margin-left: auto;margin-right: auto;width:90%;margin-top:10px"></a>-->
-        </div>
-        <div class="col-md-6" style="margin-top:20px;">
-            <h3 style="margin-top: 0px" class="hidden-xs">Kubernetes bootstrapper</h3>
-            <h3 style="margin-top: 0px;font-size:26px;text-align:center" class="visible-xs">Kubernetes bootstrapper</h3>
-            <p class="lead">How can we bootstrap self managed Kubernetes cluster in AWS?</p>
-            <div class=" " style="text-align:right">
-                <a class="btn btn-primary visible-xs-inline-block" href="https://github.com/gofynd/kube-bootstrapper"
-                   target="_blank" rel="noopener noreferrer" style="margin: 3px 3px 3px 3px;"><i
-                        class="fa fa-external-link" style="margin-right:5px"></i>Kubernetes bootstrapper</a>
-                <a class="btn btn-primary hidden-xs" href="https://github.com/gofynd/kube-bootstrapper" target="_blank"
-                   rel="noopener noreferrer" style="margin: 3px 3px 3px 3px;"><i class="fa fa-external-link"
-                                                                                 style="margin-right:5px"></i>
-                                                                                 Kubernetes bootstrapper</a>
-            </div>
+          </div>
         </div>
 
-    </div>
-    <div class="row featurette text-center m-b">
-        <div class="col-md-12">
-            <hr class="featurette-divider"/>
-            <p class="text-muted">Copyright Neeraj Shukla, 2020. All rights reserved.</p>
+        <!-- Avatar Visual Column -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow" aria-hidden="true"></div>
+            <img src="static/img/photo_HD.jpg" alt="Neeraj Shukla" class="avatar-img" width="290" height="290">
+            <div class="avatar-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Bangalore, India</span>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Executive Impact Metrics Ribbon -->
+      <div class="metrics-ribbon">
+        <div class="metric-item">
+          <div class="metric-value">1B<span>+</span></div>
+          <div class="metric-label">Daily Events Streamed (Kafka, 99.99% Uptime)</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">$500M<span>+</span></div>
+          <div class="metric-label">Asset Depreciation &amp; Computations Driven</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">70M<span>+</span></div>
+          <div class="metric-label">Physical Datacenter Assets &amp; 200K+ Racks</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">&lt;100<span>ms</span></div>
+          <div class="metric-label">P90 API Latency for High-Volume Services</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">13<span>+</span> Yrs</div>
+          <div class="metric-label">Engineering Distributed Systems &amp; Platforms</div>
+        </div>
+      </div>
     </div>
-</div>
+  </section>
+
+  <!-- Core Architectural Pillars / Superpowers -->
+  <section id="domains">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Capabilities</span>
+        <h2 class="section-title">Architectural Superpowers</h2>
+        <p class="section-desc">
+          Specialized in mission-critical backend systems where throughput, data integrity, microsecond latency, and fault tolerance are non-negotiable.
+        </p>
+      </div>
+
+      <div class="domains-grid">
+        <!-- Domain 1 -->
+        <div class="domain-card">
+          <div class="domain-icon cyan">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+          </div>
+          <h3 class="domain-title">High-Throughput Distributed Streaming</h3>
+          <p class="domain-desc">
+            Architecting ultra-resilient event processing pipelines with Apache Kafka. Implementing idempotent producers, consistent key partitioning, dual-tier deduplication (LRU + DB), adaptive batching, exponential backoff retries, and dead-letter queue isolation with automated recovery.
+          </p>
+          <div class="domain-tags">
+            <span class="tag-pill">Kafka</span>
+            <span class="tag-pill">Event Sourcing</span>
+            <span class="tag-pill">Idempotency</span>
+            <span class="tag-pill">Dead Letter Queues</span>
+            <span class="tag-pill">99.99% Uptime</span>
+          </div>
+        </div>
+
+        <!-- Domain 2 -->
+        <div class="domain-card">
+          <div class="domain-icon purple">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h3 class="domain-title">GenAI &amp; Agentic RAG Architectures</h3>
+          <p class="domain-desc">
+            Productionizing autonomous AI platforms using Temporal durable orchestration, vector databases (PostgreSQL pgvector with HNSW indexing), dense embeddings with cross-encoder rerankers, ReAct tool-calling agents, LoRA fine-tuning harnesses, and Ragas evaluation frameworks.
+          </p>
+          <div class="domain-tags">
+            <span class="tag-pill">Temporal Workflows</span>
+            <span class="tag-pill">pgvector</span>
+            <span class="tag-pill">ReAct Agents</span>
+            <span class="tag-pill">RAG Evaluation</span>
+            <span class="tag-pill">LoRA / PEFT</span>
+            <span class="tag-pill">FastMCP</span>
+          </div>
+        </div>
+
+        <!-- Domain 3 -->
+        <div class="domain-card">
+          <div class="domain-icon emerald">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          </div>
+          <h3 class="domain-title">Cloud Platforms &amp; Datacenter Scale</h3>
+          <p class="domain-desc">
+            Building core platform systems managing 70M+ physical datacenter assets and 200K+ racks at Oracle Cloud Infrastructure (OCI). Expertise in Kubernetes, Docker, Terraform, microservices optimization, database query performance, and maintaining P90 API latency under 100ms.
+          </p>
+          <div class="domain-tags">
+            <span class="tag-pill">Oracle Cloud (OCI)</span>
+            <span class="tag-pill">Kubernetes</span>
+            <span class="tag-pill">Terraform</span>
+            <span class="tag-pill">Docker</span>
+            <span class="tag-pill">P90 &lt;100ms</span>
+          </div>
+        </div>
+
+        <!-- Domain 4 -->
+        <div class="domain-card">
+          <div class="domain-icon amber">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="domain-title">Architecture Leadership &amp; SDLC Velocity</h3>
+          <p class="domain-desc">
+            Steering cross-team architecture reviews, authoring system RFCs, and mentoring engineers to staff roles. Pioneering AI-augmented development workflows, LLM-driven incident triage, automated refactoring pipelines, and establishing rigorous testing and observability standards.
+          </p>
+          <div class="domain-tags">
+            <span class="tag-pill">System Design RFCs</span>
+            <span class="tag-pill">Staff Mentorship</span>
+            <span class="tag-pill">AI-Driven SDLC</span>
+            <span class="tag-pill">Observability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Engineering Projects & Case Studies -->
+  <section id="projects" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Engineering</span>
+        <h2 class="section-title">Systems &amp; Architecture Showcase</h2>
+        <p class="section-desc">
+          Production-grade systems demonstrating distributed consistency, durable workflow execution, agentic AI triage, and real-time observability.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all" type="button">All Projects (6)</button>
+        <button class="filter-btn" data-filter="genai" type="button">GenAI &amp; AI Systems</button>
+        <button class="filter-btn" data-filter="distributed" type="button">Distributed Systems</button>
+        <button class="filter-btn" data-filter="cloud" type="button">Cloud &amp; Open Source</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Agentic Incident Copilot -->
+        <div class="project-card" data-category="genai distributed">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Enterprise GenAI</span>
+              <div class="project-links">
+                <a href="https://github.com/neerajshukla1911" target="_blank" rel="noopener noreferrer" class="btn-icon btn-sm" aria-label="GitHub Repo" title="View Source">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Agentic Incident Copilot</h3>
+            <p class="project-desc">
+              Autonomous enterprise incident triage platform engineered with Temporal durable execution, PostgreSQL pgvector HNSW indexing, ReAct tool-calling agents, LoRA fine-tuning harnesses, and Ragas evaluation metrics.
+            </p>
+            <ul class="project-features">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Crash-resilient Temporal Workflows with automatic retries and event sourcing</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Hybrid RAG with dense vector search, cross-encoder reranking, and citation grounding</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Responsible AI guardrails rejecting prompt injection and scrubbing credentials</span>
+              </li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Temporal</span>
+            <span class="tech-tag">pgvector</span>
+            <span class="tech-tag">ReAct Agent</span>
+            <span class="tech-tag">LoRA/PEFT</span>
+            <span class="tech-tag">Ragas</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Enterprise Kafka Pipeline -->
+        <div class="project-card" data-category="distributed">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Streaming Architecture</span>
+              <div class="project-links">
+                <a href="https://github.com/neerajshukla1911" target="_blank" rel="noopener noreferrer" class="btn-icon btn-sm" aria-label="GitHub Repo" title="View Source">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Enterprise Kafka Resilient Stream Processing</h3>
+            <p class="project-desc">
+              Production-grade event streaming pipeline handling extreme bursts with idempotent delivery guarantees, Murmur2 consistent partition hashing, dual-tier deduplication, and a live WebSocket observability dashboard.
+            </p>
+            <ul class="project-features">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero message loss with <code>enable.idempotence=True</code> and <code>acks=all</code></span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dual-tier deduplication (O(1) in-memory LRU + atomic DB ON CONFLICT)</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dead Letter Queue with full jitter retry and 1-click administrative replay</span>
+              </li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Apache Kafka</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">WebSockets</span>
+            <span class="tech-tag">Idempotency</span>
+            <span class="tech-tag">DLQ</span>
+          </div>
+        </div>
+
+        <!-- Project 3: DevOps Diagnostics MCP Server -->
+        <div class="project-card" data-category="genai cloud">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Model Context Protocol</span>
+              <div class="project-links">
+                <a href="https://github.com/neerajshukla1911" target="_blank" rel="noopener noreferrer" class="btn-icon btn-sm" aria-label="GitHub Repo" title="View Source">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">DevOps Diagnostics MCP Server</h3>
+            <p class="project-desc">
+              Production-ready Model Context Protocol (MCP) server providing host telemetry, socket latency diagnostics, deep process inspection, and automated incident triage heuristics for AI agents.
+            </p>
+            <ul class="project-features">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Integrated with FastMCP, compatible with Claude Desktop, Cursor, and Antigravity</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Autonomous heuristic triage correlating live anomalies to remediation steps</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Safe streaming log search with regex filtering and socket connectivity probes</span>
+              </li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">FastMCP</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">JSON-RPC</span>
+            <span class="tech-tag">psutil</span>
+            <span class="tech-tag">Diagnostics</span>
+          </div>
+        </div>
+
+        <!-- Project 4: GlamAR (Fynd / Reliance) -->
+        <div class="project-card" data-category="genai distributed">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Computer Vision &amp; AR</span>
+              <div class="project-links">
+                <a href="https://blog.gofynd.com/glamar-how-we-built-a-real-time-try-on-app-f8719b2f47b" target="_blank" rel="noopener noreferrer" class="btn-icon btn-sm" aria-label="GlamAR Blog Post" title="Read Tech Article">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">GlamAR - Real-Time AR Try-On Platform</h3>
+            <p class="project-desc">
+              Founding Engineer from scratch at Fynd (Acquired by Reliance Industries). Built real-time AR try-on backend, recruited and led engineering team, and automated ML catalog metadata extraction reducing overhead by 70%.
+            </p>
+            <ul class="project-features">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Real-time computer vision inference scaled across major retail brand partnerships</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated ML-based metadata extraction cutting catalog ingestion overhead by 70%</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Engineered distributed idempotency layer for high-concurrency order management</span>
+              </li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">ML Pipelines</span>
+            <span class="tech-tag">Distributed Catalogs</span>
+            <span class="tech-tag">Reliance</span>
+          </div>
+        </div>
+
+        <!-- Project 5: OCI Datacenter Infrastructure -->
+        <div class="project-card" data-category="distributed cloud">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Hyperscale Cloud</span>
+            </div>
+            <h3 class="project-title">OCI Datacenter Capacity &amp; Depreciation Engine</h3>
+            <p class="project-desc">
+              Near real-time single source of truth for global datacenter infrastructure analytics at Oracle Cloud Infrastructure (OCI). Processing 1B+ events/day to compute launches and $500M+ in asset depreciation calculations.
+            </p>
+            <ul class="project-features">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Manages tracking for 70M+ physical datacenter assets and 200K+ racks globally</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Sub-100ms P90 API latency across high-throughput distributed microservices</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Built internal RAG search indexing runbooks and platform documentation</span>
+              </li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Oracle Cloud (OCI)</span>
+            <span class="tech-tag">Kafka</span>
+            <span class="tech-tag">Microservices</span>
+            <span class="tech-tag">OracleDB</span>
+            <span class="tech-tag">RAG Search</span>
+          </div>
+        </div>
+
+        <!-- Project 6: Open Source & Developer Tooling -->
+        <div class="project-card" data-category="cloud">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Open Source</span>
+              <div class="project-links">
+                <a href="https://github.com/browserstack/requests-debugger" target="_blank" rel="noopener noreferrer" class="btn-icon btn-sm" aria-label="Requests Debugger GitHub" title="View Source">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Open Source Developer Ecosystem</h3>
+            <p class="project-desc">
+              Author and contributor to impactful open-source developer tooling including BrowserStack's <code>requests-debugger</code>, scalable Flask application architecture templates, and AWS Kubernetes bootstrap utilities.
+            </p>
+            <ul class="project-features">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>requests-debugger</strong>: Deep network inspection utility for HTTP clients at BrowserStack</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>flask-full</strong>: Modular design blueprint for large-scale enterprise Flask applications</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>kube-bootstrapper</strong>: Self-managed Kubernetes orchestration and provisioning on AWS</span>
+              </li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Kubernetes</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Open Source</span>
+            <span class="tech-tag">Developer Tooling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience Timeline -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Track</span>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-desc">
+          13+ years building and scaling enterprise platforms, event pipelines, and engineering teams.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- Role 1: Oracle -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Staff Software Engineer</h3>
+                <div class="timeline-company">Oracle Cloud Infrastructure (OCI)</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span>May 2021 – Present</span>
+                </span>
+                <span>Bangalore, India</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>
+                Spearheaded datacenter capacity planning by establishing a near real-time <strong>source of truth</strong> for infrastructure analytics; designed distributed pipelines processing <strong>1B+ daily events</strong> to drive cross-service compute launches and <strong>$500M+ in asset depreciation calculations</strong> at 99.99% uptime.
+              </li>
+              <li>
+                Championed the integration of Generative AI into the SDLC, utilizing LLMs to triage complex system issues and accelerate delivery velocity and code quality across engineering platform teams.
+              </li>
+              <li>
+                Contributed to the core infrastructure platform managing <strong>200K+ racks and 70M+ physical assets</strong> across global Oracle Cloud Infrastructure datacenters.
+              </li>
+              <li>
+                Maintained <strong>P90 API latency &lt;100ms</strong> for high-volume services through continuous query optimization, caching strategies, and memory profiling.
+              </li>
+              <li>
+                Designed end-to-end <strong>RAG pipelines</strong> to index system documentation and runbooks, serving natural-language queries for platform engineering teams with low retrieval latency.
+              </li>
+              <li>
+                Led architecture discussions, cross-service system design reviews, and actively mentored engineers to senior-level roles.
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tech-tag">Kafka</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Oracle Cloud</span>
+              <span class="tech-tag">RAG Pipelines</span>
+              <span class="tech-tag">GenAI SDLC</span>
+              <span class="tech-tag">Distributed Systems</span>
+              <span class="tech-tag">System Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 2: BrowserStack -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Software Engineer</h3>
+                <div class="timeline-company">BrowserStack</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span>Aug 2020 – Apr 2021</span>
+                </span>
+                <span>Mumbai / Remote</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>
+                Improved performance, throughput, and reliability of APIs for the automated testing platform executing <strong>10M+ automated tests daily</strong>.
+              </li>
+              <li>
+                Conducted deep-dive root cause analyses for production bottlenecks and implemented long-term architectural stability fixes.
+              </li>
+              <li>
+                Automated infrastructure provisioning and deployment pipelines using Terraform, Docker, and CI/CD tools.
+              </li>
+              <li>
+                Contributed to developer tooling improvements and open-source utilities including <code>requests-debugger</code>.
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Terraform</span>
+              <span class="tech-tag">APIs</span>
+              <span class="tech-tag">Performance Tuning</span>
+              <span class="tech-tag">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 3: Fynd (Reliance) -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Principal Engineer</h3>
+                <div class="timeline-company">Fynd (Acquired by Reliance Industries Limited)</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span>Jul 2015 – Jul 2020</span>
+                </span>
+                <span>Mumbai, India</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>
+                <strong>Founding Engineer for GlamAR:</strong> Built the virtual try-on backend from scratch and recruited/led a specialized engineering team to deliver a real-time computer-vision platform scaled across major retailers, significantly increasing conversion rates.
+              </li>
+              <li>
+                Identified and evangelized the transition to automated <strong>ML-based metadata extraction</strong>, reducing operational overhead by <strong>70%</strong> and accelerating catalog time-to-market.
+              </li>
+              <li>
+                Eliminated duplicate ordering issues by designing and implementing a <strong>distributed idempotency layer</strong> within the Order Management System, ensuring transaction integrity across high-concurrency flash sales.
+              </li>
+              <li>
+                Led backend engineering teams developing distributed systems for high-throughput e-commerce catalog ingestion and processing.
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">ML Pipelines</span>
+              <span class="tech-tag">Distributed Idempotency</span>
+              <span class="tech-tag">Order Management</span>
+              <span class="tech-tag">Python/Flask</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role 4: Capgemini -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer</h3>
+                <div class="timeline-company">Capgemini</div>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span>Mar 2013 – Jul 2015</span>
+                </span>
+                <span>Mumbai, India</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>
+                Developed backend services and business logic for high-traffic enterprise web applications.
+              </li>
+              <li>
+                Implemented asynchronous job queues and background workers using Python and Django.
+              </li>
+              <li>
+                Enhanced system reliability through comprehensive metrics monitoring and database query tuning.
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Async Workers</span>
+              <span class="tech-tag">Enterprise APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Matrix -->
+  <section id="skills" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Arsenal</span>
+        <h2 class="section-title">Skills &amp; Technology Matrix</h2>
+        <p class="section-desc">
+          Comprehensive toolset refined across 13+ years of architecting scalable infrastructure, distributed systems, and AI workflows.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1 -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            <span>Languages &amp; Core</span>
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill featured">Python (Expert - 13+ yrs)</span>
+            <span class="skill-pill">JavaScript / ES6+</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Shell / Bash</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            <span>GenAI &amp; AI Infrastructure</span>
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill featured">RAG Architectures</span>
+            <span class="skill-pill featured">pgvector / Vector DBs</span>
+            <span class="skill-pill featured">Temporal Durable Workflows</span>
+            <span class="skill-pill">ReAct Agentic Tooling</span>
+            <span class="skill-pill">LoRA / PEFT Fine-Tuning</span>
+            <span class="skill-pill">Ragas Evaluation</span>
+            <span class="skill-pill">FastMCP / MCP Protocols</span>
+            <span class="skill-pill">AI-Augmented SDLC</span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            <span>Distributed Systems &amp; Streaming</span>
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill featured">Apache Kafka</span>
+            <span class="skill-pill featured">Event-Driven Architecture</span>
+            <span class="skill-pill featured">Distributed Idempotency</span>
+            <span class="skill-pill">Consistent Key Partitioning</span>
+            <span class="skill-pill">Dead Letter Queues (DLQ)</span>
+            <span class="skill-pill">Disaster Recovery</span>
+            <span class="skill-pill">Distributed Consistency</span>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span>Frameworks &amp; Web</span>
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill featured">FastAPI</span>
+            <span class="skill-pill">Flask</span>
+            <span class="skill-pill">Django</span>
+            <span class="skill-pill">Micronaut</span>
+            <span class="skill-pill">React.js</span>
+            <span class="skill-pill">Pydantic v2</span>
+            <span class="skill-pill">RESTful APIs</span>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            <span>Databases &amp; Storage</span>
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill featured">PostgreSQL</span>
+            <span class="skill-pill featured">Redis</span>
+            <span class="skill-pill">OracleDB</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">HNSW Indexing</span>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            <span>Cloud, DevOps &amp; Reliability</span>
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill featured">Oracle Cloud (OCI)</span>
+            <span class="skill-pill featured">Kubernetes</span>
+            <span class="skill-pill featured">Docker</span>
+            <span class="skill-pill">Terraform</span>
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">Grafana &amp; Prometheus</span>
+            <span class="skill-pill">Kibana / ELK</span>
+            <span class="skill-pill">Sentry &amp; New Relic</span>
+            <span class="skill-pill">Jenkins &amp; CI/CD</span>
+            <span class="skill-pill">Nginx</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writings, Presentations & Education -->
+  <section id="writings">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Thought Leadership</span>
+        <h2 class="section-title">Writings &amp; Education</h2>
+        <p class="section-desc">
+          Technical deep-dives on real-time computer vision, platform engineering, and academic foundations.
+        </p>
+      </div>
+
+      <div class="split-grid">
+        <!-- Left: Publications & Articles -->
+        <div>
+          <a href="https://blog.gofynd.com/glamar-how-we-built-a-real-time-try-on-app-f8719b2f47b" target="_blank" rel="noopener noreferrer" class="writing-card">
+            <div class="writing-date">Fynd Engineering Blog • Featured Article</div>
+            <h3 class="writing-title">
+              <span>GlamAR: How We Built a Real-Time Try-On App</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </h3>
+            <p class="writing-desc">
+              Comprehensive technical breakdown of engineering the GlamAR computer-vision augmented reality try-on platform from scratch, tackling low-latency video streaming, facial feature tracking, and scalable inference.
+            </p>
+          </a>
+
+          <a href="https://medium.com/@neerajshukla1911" target="_blank" rel="noopener noreferrer" class="writing-card">
+            <div class="writing-date">Medium • Technical Articles</div>
+            <h3 class="writing-title">
+              <span>Articles &amp; Architecture Insights on Medium</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </h3>
+            <p class="writing-desc">
+              Deep dives on backend systems, developer tooling, Python patterns, microservice optimizations, and AI-assisted triage workflows.
+            </p>
+          </a>
+
+          <a href="https://docs.google.com/presentation/d/1X7x6fofiQ4TLecBEYLgrXRD5O19-VfLOaP68Pwwv8n8" target="_blank" rel="noopener noreferrer" class="writing-card">
+            <div class="writing-date">Presentation • System Design</div>
+            <h3 class="writing-title">
+              <span>Architecture &amp; System Design Presentations</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </h3>
+            <p class="writing-desc">
+              Slide deck on high-throughput platform design, asynchronous job coordination, and modern backend architectures.
+            </p>
+          </a>
+        </div>
+
+        <!-- Right: Education -->
+        <div>
+          <div class="edu-card">
+            <div class="section-tag" style="width: fit-content; margin-bottom: 1rem;">Academic Foundation</div>
+            <h3 class="edu-degree">Bachelor of Engineering (B.E.) in Information Technology</h3>
+            <div class="edu-institution">Amravati University • Class of 2012</div>
+            <p class="project-desc">
+              Rigorous 4-year degree in computing, algorithms, distributed systems, database management systems, computer networks, and operating systems.
+            </p>
+
+            <div class="edu-scores">
+              <div class="edu-score-box">
+                <div class="score-num">69.3%</div>
+                <div class="score-label">B.E. (IT)</div>
+              </div>
+              <div class="edu-score-box">
+                <div class="score-num">89.5%</div>
+                <div class="score-label">HSC (Higher Sec)</div>
+              </div>
+              <div class="edu-score-box">
+                <div class="score-num">87.3%</div>
+                <div class="score-label">SSC (Secondary)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube Interview Shorts & Reels Section -->
+  <section id="shorts" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3); background: rgba(239, 68, 68, 0.1);">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube Creator
+        </span>
+        <h2 class="section-title">Technical Interview Shorts &amp; Reels</h2>
+        <p class="section-desc">
+          Rapid-fire 60-second Staff-level deep dives breaking down real-world System Design, RAG Architectures, Apache Kafka, and Distributed Systems traps on <a href="https://www.youtube.com/@neerajdshukla/shorts" target="_blank" rel="noopener noreferrer" style="color: #ef4444; font-weight: 600;">@neerajdshukla/shorts</a>.
+        </p>
+      </div>
+
+      <div class="shorts-grid">
+        <!-- Reel Series 1: RAG & GenAI Traps -->
+        <div class="short-card">
+          <div>
+            <div class="short-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              60s Technical Reel
+            </div>
+            <div class="short-play-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+            </div>
+            <h3 class="short-title">RAG Architectures &amp; GenAI Traps</h3>
+            <p class="short-desc">
+              Critical enterprise GenAI pitfalls—why pure vector search fails on SKUs, chunking boundary traps, and bi-encoder vs cross-encoder reranking latency trade-offs.
+            </p>
+            <ul class="short-topics">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Naive fixed-char chunking vs Parent-Child retrieval</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>HNSW vs IVF-PQ vector memory explosions</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>The RAG Triad &amp; Sentence-Level NLI verification</span>
+              </li>
+            </ul>
+          </div>
+          <div class="short-footer">
+            <a href="https://www.youtube.com/@neerajdshukla/shorts" target="_blank" rel="noopener noreferrer" class="short-watch-btn">
+              <span>Watch on YouTube</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <span class="tech-tag" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.25);">GenAI</span>
+          </div>
+        </div>
+
+        <!-- Reel Series 2: Kafka & Resiliency -->
+        <div class="short-card">
+          <div>
+            <div class="short-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              60s Technical Reel
+            </div>
+            <div class="short-play-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+            </div>
+            <h3 class="short-title">Kafka &amp; Event Streaming Pitfalls</h3>
+            <p class="short-desc">
+              Battle-tested answers for Senior/Staff distributed systems interviews—handling consumer group rebalances, hot partitions, and zero data loss producer configuration.
+            </p>
+            <ul class="short-topics">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Idle Consumer Trap &amp; Partition Scaling laws</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Murmur2 key hashing &amp; hot partition skews</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Auto vs Manual offset commit &amp; DLQ isolation</span>
+              </li>
+            </ul>
+          </div>
+          <div class="short-footer">
+            <a href="https://www.youtube.com/@neerajdshukla/shorts" target="_blank" rel="noopener noreferrer" class="short-watch-btn">
+              <span>Watch on YouTube</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <span class="tech-tag" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.25);">Kafka</span>
+          </div>
+        </div>
+
+        <!-- Reel Series 3: System Design & Microservices -->
+        <div class="short-card">
+          <div>
+            <div class="short-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              60s Technical Reel
+            </div>
+            <div class="short-play-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+            </div>
+            <h3 class="short-title">System Design &amp; Protocols</h3>
+            <p class="short-desc">
+              High-yield architectural comparisons—why Redis is fast, gRPC vs WebSockets vs Webhooks, distributed idempotency, and scaling microservice backbones.
+            </p>
+            <ul class="short-topics">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Distributed Idempotency under flash traffic</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Latency vs Throughput trade-offs</span>
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>gRPC, WebSocket &amp; HTTP/2 multiplexing</span>
+              </li>
+            </ul>
+          </div>
+          <div class="short-footer">
+            <a href="https://www.youtube.com/@neerajdshukla/shorts" target="_blank" rel="noopener noreferrer" class="short-watch-btn">
+              <span>Watch on YouTube</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <span class="tech-tag" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.25);">Architecture</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Channel CTA Banner -->
+      <div style="text-align: center;">
+        <a href="https://www.youtube.com/@neerajdshukla/shorts" target="_blank" rel="noopener noreferrer" class="btn btn-youtube">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>Subscribe &amp; Watch All Interview Shorts on YouTube (@neerajdshukla)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section & Call to Action -->
+  <section id="contact">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Let's Build Resilient, High-Impact Systems</h2>
+        <p class="cta-desc">
+          Interested in discussing high-throughput distributed systems, GenAI platform architectures, or technical leadership? Let's connect.
+        </p>
+
+        <div class="cta-actions">
+          <a href="mailto:neerajshukla1911@gmail.com" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Send Email</span>
+          </a>
+
+          <button class="btn btn-secondary copy-email-btn" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Address</span>
+          </button>
+
+          <a href="https://www.linkedin.com/in/neerajshukla1911/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://www.youtube.com/@neerajdshukla/shorts" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="border-color: rgba(239, 68, 68, 0.35);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: #ef4444;"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <span>YouTube Shorts</span>
+          </a>
+
+          <button class="btn btn-ghost open-resume-modal" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span>View Resume</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <span>&copy; 2026 Neeraj Dilip Shukla. All rights reserved.</span>
+          <div style="font-size: 0.78rem; margin-top: 0.25rem;">Staff Software Engineer • Distributed Systems &amp; GenAI Architect</div>
+        </div>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Back to Top ↑</a>
+          <a href="https://github.com/neerajshukla1911" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/neerajshukla1911/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+          <a href="https://www.youtube.com/@neerajdshukla/shorts" target="_blank" rel="noopener noreferrer" class="footer-link">YouTube Shorts</a>
+          <a href="https://medium.com/@neerajshukla1911" target="_blank" rel="noopener noreferrer" class="footer-link">Medium</a>
+          <a href="static/neeraj_shukla_resume.pdf" download="Neeraj_Shukla_Resume.pdf" class="footer-link">Resume PDF</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Resume Modal -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title" id="modal-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Neeraj Dilip Shukla - Resume (CV)</span>
+        </div>
+        <div class="modal-actions">
+          <a href="static/neeraj_shukla_resume.pdf" download="Neeraj_Shukla_Resume.pdf" class="btn btn-primary btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download</span>
+          </a>
+          <a href="static/neeraj_shukla_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Open in new tab">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <span>Open Tab</span>
+          </a>
+          <button class="btn-icon btn-sm close-resume-modal" type="button" aria-label="Close modal">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="static/neeraj_shukla_resume.pdf#view=FitH" class="modal-iframe" title="Neeraj Shukla Resume PDF Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span class="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="static/js/main.js"></script>
 </body>
 </html>
