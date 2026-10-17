@@ -451,6 +451,76 @@ section {
   width: fit-content;
 }
 
+.status-badges-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.badge-creator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.95rem;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #ef4444;
+  width: fit-content;
+  transition: var(--transition);
+}
+
+.badge-creator:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: #ef4444;
+  color: #f87171;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+}
+
+.badge-creator svg {
+  color: #ef4444;
+}
+
+.hero-link-highlight {
+  color: #ef4444;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: var(--transition);
+}
+
+.hero-link-highlight:hover {
+  color: #f87171;
+}
+
+.btn-youtube-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.4rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #ffffff !important;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.25);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-youtube-sm:hover {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+}
+
 .pulse-dot {
   width: 8px;
   height: 8px;
@@ -573,7 +643,7 @@ section {
 .metrics-ribbon {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   padding: 1.75rem 2rem;
   background: var(--bg-card);
@@ -1540,7 +1610,8 @@ section {
   }
 
   .metric-item:nth-child(4),
-  .metric-item:nth-child(5) {
+  .metric-item:nth-child(5),
+  .metric-item:nth-child(6) {
     border-top: 1px solid var(--border-subtle);
     padding-top: 1rem;
   }
@@ -1595,8 +1666,12 @@ section {
     border-right: none;
   }
 
-  .metric-item:nth-child(5) {
-    grid-column: span 2;
+  .metric-item:nth-child(3),
+  .metric-item:nth-child(4),
+  .metric-item:nth-child(5),
+  .metric-item:nth-child(6) {
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 1rem;
   }
 
   .section-title {
