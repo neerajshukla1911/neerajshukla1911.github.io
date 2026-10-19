@@ -87,49 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ==========================================
-  // 4. Resume Modal Logic
-  // ==========================================
-  const resumeModal = document.getElementById('resume-modal');
-  const openModalBtns = document.querySelectorAll('.open-resume-modal');
-  const closeModalBtns = document.querySelectorAll('.close-resume-modal');
-
-  openModalBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (resumeModal) {
-        resumeModal.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      }
-    });
-  });
-
-  closeModalBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      closeResumeModal();
-    });
-  });
-
-  if (resumeModal) {
-    resumeModal.addEventListener('click', (e) => {
-      if (e.target === resumeModal) {
-        closeResumeModal();
-      }
-    });
-  }
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && resumeModal && resumeModal.classList.contains('open')) {
-      closeResumeModal();
-    }
-  });
-
-  function closeResumeModal() {
-    if (resumeModal) {
-      resumeModal.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-  }
 
   // ==========================================
   // 5. Copy Email to Clipboard with Toast
