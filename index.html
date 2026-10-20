@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Neeraj Shukla | Staff Software Engineer &amp; Distributed Systems / GenAI Architect</title>
   
   <meta name="description" content="Staff-level backend engineer with 13+ years of experience designing high-throughput distributed systems, event-driven data pipelines (1B+ daily events), and scalable AI/ML infrastructure at Oracle (OCI), BrowserStack, and Fynd (acquired by Reliance).">
@@ -93,12 +93,17 @@
           <li><a href="#shorts" class="nav-link">Shorts</a></li>
           <li><a href="#writings" class="nav-link">Writings</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-menu-cta">
+            <a href="#contact" class="btn btn-primary btn-sm">
+              <span>Get in Touch</span>
+            </a>
+          </li>
         </ul>
       </nav>
 
       <!-- Action items: Theme Toggle & Mobile Menu -->
       <div class="nav-actions">
-        <a href="#contact" class="btn btn-primary btn-sm">
+        <a href="#contact" class="btn btn-primary btn-sm btn-contact-nav">
           <span>Get in Touch</span>
         </a>
 
@@ -110,11 +115,13 @@
         </button>
 
         <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
       </div>
     </div>
   </header>
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
