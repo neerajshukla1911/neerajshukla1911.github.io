@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileToggle = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
   const navBackdrop = document.getElementById('nav-backdrop');
-  const navLinks = document.querySelectorAll('.nav-link, .nav-menu-cta a');
+  const navLinks = document.querySelectorAll('.nav-link, .btn-contact-nav');
 
   function openMobileMenu() {
     if (!navMenu || !mobileToggle) return;

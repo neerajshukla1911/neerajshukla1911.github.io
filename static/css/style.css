@@ -411,10 +411,6 @@ section {
   width: 100%;
 }
 
-.nav-menu-cta {
-  display: none;
-}
-
 .nav-actions {
   display: flex;
   align-items: center;
@@ -1591,16 +1587,6 @@ section {
 
   .btn-contact-nav {
     display: none;
-  }
-
-  .nav-menu-cta {
-    display: block;
-    width: 100%;
-    margin-top: 0.5rem;
-  }
-
-  .nav-menu-cta .btn {
-    width: 100%;
   }
 
   .hero-title {
